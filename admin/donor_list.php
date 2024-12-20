@@ -67,7 +67,7 @@ include 'conn.php';
         }
         $offset = ($page - 1) * $limit;
         $count=$offset+1;
-        $sql= "select * from donor_details join blood where donor_details.donor_blood=blood.blood_id LIMIT {$offset},{$limit}";
+        $sql = "SELECT * FROM donor_details JOIN blood ON donor_details.donor_blood = blood.blood_id LIMIT {$offset}, {$limit}";
         $result=mysqli_query($conn,$sql);
         if(mysqli_num_rows($result)>0)   {
        ?>

@@ -71,13 +71,13 @@ $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
               while($row = mysqli_fetch_assoc($result)) { ?>
         <br>
         <p>
-            <h4>Address :</h4><?php echo $row['contact_address']; ?>
+          <h4>Address :</h4> Navsari, Gujarat
         </p>
         <p>
-            <h4>Contact Number :</h4><?php echo $row['contact_phone']; ?>
+          <h4>Contact Number :</h4> 8511971315
         </p>
         <p>
-          <h4>  Email: </h4><a href="#"><?php echo $row['contact_mail']; ?></a>
+        <h4>Email: </h4><a href="mailto:jayeshdevre421@gmail.com">jayeshdevre421@gmail.com</a>
           </a></b>
         </p>
         <?php }
